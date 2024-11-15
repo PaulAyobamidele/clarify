@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+// Import layout components
+import Header from './components/layout/Header/Header.jsx';
+import Footer from './components/layout/Footer/Footer.jsx';
+import Navbar from './components/layout/Navbar/Navbar.jsx';
+
+// Import other components
+// import Hero from './components/Hero/Hero.jsx';
+// import AboutUs from './components/AboutUs/AboutUs';
+// import Awareness from './components/Awareness/Awareness.jsx';
+// import Training from './components/Training/Training.jsx';
+// import CTA from './components/CTA/CTA.jsx';
+// import Contact from './components/Contact/Contact.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Header />
+      {/* <Hero />
+      <AboutUs />
+      <Awareness />
+      <Training />
+      <CTA />
+      <Contact /> */}
+      <Footer />
     </div>
   );
 }
