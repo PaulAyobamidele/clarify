@@ -1,19 +1,24 @@
+// Navbar.jsx
 import React from 'react';
-import './navbar.css'; // Assuming you have a CSS file for styling
+import './navbar.css';
 
 const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <ul className="nav-list">
-          <li className="nav-item"><a href="#home">Home</a></li>
-          <li className="nav-item"><a href="#about">About Us</a></li>
-          <li className="nav-item"><a href="#services">Services</a></li>
-          <li className="nav-item"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  );
-}
+    return (
+        <nav className="navbar">
+            <div className="logo">clarify</div>
+            <ul className="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#causes">Awareness</a></li>
+                <li><a href="#page">Training</a></li>
+                <li><a href="#donation">Donation</a></li>
+                <li><a href="#blog">Contact US</a></li>
+            </ul>
+            <div className="contact-info">
+                <button className="donate-button">Donation</button>
+            </div>
+        </nav>
+    );
+};
 
 export default Navbar;

@@ -1,0 +1,71 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 50px; /* Reduced margin to fit content better */
+    position: relative; /* Make this container relative for absolute positioning of images */
+  }
+  
+  .hero-images {
+    position: relative;
+    width: 300px;
+    height: 200px; /* Set fixed height for the image container */
+  }
+  
+  .hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Styling and positioning images to overlap */
+  .hero-image-one {
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+  
+  .hero-image-three {
+    right: 90px; /* Slight shift to the right */
+    top: 80px;  /* Slight shift down */
+    z-index: 2;
+  }
+  
+  .hero-image-four {
+    left: 80px; /* Further shift to the right */
+    top: 40px;  /* Further shift down */
+    z-index: 1;
+  }
+  
+  .hero-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  .hero-text {
+    max-width: 50%;
+    padding: 20px;
+    z-index: 4; /* Ensures the text is above the images */
+    position: relative; /* Keeps the text in the flow of the container */
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  .hero-text p {
+    font-size: 1.2em;
+  }
+  
