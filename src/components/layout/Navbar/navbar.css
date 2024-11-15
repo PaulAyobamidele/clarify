@@ -50,17 +50,17 @@
 
 .donate-button {
     background-color: transparent;
-    border: 2px solid #C1121F;
-    color: #C1121F;
+    border: 2px solid #222;
+    color: #222;
     padding: 5px 15px;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 5px;
     font-family: Poppins;
     transition: all 0.3s ease;
 }
 
 .donate-button:hover {
-    background-color: #C1121F;
+    background-color: #222;
     color: #ffffff;
 }

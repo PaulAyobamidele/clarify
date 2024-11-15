@@ -1,71 +1,133 @@
 .hero-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
-    margin: 0 50px; /* Reduced margin to fit content better */
-    position: relative; /* Make this container relative for absolute positioning of images */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 100px auto;
+    
   }
   
   .hero-images {
     position: relative;
-    width: 300px;
-    height: 200px; /* Set fixed height for the image container */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
   }
+
+  .hero-images:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .image img:hover {
+        filter: brightness(0.8);
+        transition: filter 0.3s ease-in-out;
+    }
+
+    .statistic:hover {
+        background-color: #A10E1A;
+        transition: background-color 0.3s ease-in-out;
+    }
   
-  .hero-image {
+  .image {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
   }
   
-  .hero-image img {
+  .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
   }
   
-  /* Styling and positioning images to overlap */
-  .hero-image-one {
-    left: 0;
+  .image-one {
     top: 0;
-    z-index: 3;
-  }
-  
-  .hero-image-three {
-    right: 90px; /* Slight shift to the right */
-    top: 80px;  /* Slight shift down */
+    left: 20px;
     z-index: 2;
   }
   
-  .hero-image-four {
-    left: 80px; /* Further shift to the right */
-    top: 40px;  /* Further shift down */
+  .image-two {
+    top: 100px;
+    left: 100px;
     z-index: 1;
   }
   
-  .hero-image img:hover {
-    transform: scale(1.05);
+  .statistic {
+    position: absolute;
+    bottom: -400px;
+    left: 340px;
+    background-color: #C1121F;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 3;
+    text-align: center;
   }
   
-  .hero-text {
-    max-width: 50%;
-    padding: 20px;
-    z-index: 4; /* Ensures the text is above the images */
-    position: relative; /* Keeps the text in the flow of the container */
-  }
-  
-  .hero-text h1 {
-    font-size: 2.5em;
+  .statistic h2 {
+    font-size: 2em;
     margin: 0;
   }
   
-  .hero-text p {
-    font-size: 1.2em;
+  .statistic p {
+    margin: 0;
+    font-size: 0.6em;
+  }
+  
+  .hero-content {
+    width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .hero-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 1.5em;
+  }
+  
+  .learn-more-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 2px solid #222;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #222;
+    color: #fff;
   }
   

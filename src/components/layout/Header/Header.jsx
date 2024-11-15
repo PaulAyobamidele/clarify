@@ -11,7 +11,7 @@ const Header = () => {
         <h1 className="header-title">
               Empowering Every Learner
         </h1>
-        <button className="donation-button">Donation Now</button>
+        <button className="donation-button">Get in Touch</button>
         {/* <button className="video-button">
             <span>▶</span> How we’re making a difference
         </button> */}
