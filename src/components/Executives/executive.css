@@ -1,4 +1,5 @@
 .executive-grid {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 20px;
@@ -60,8 +61,8 @@
 
   .arrow-doodle {
     position: absolute;
-    top: 1%; 
-    right: 90%; 
+    top: 60%; 
+    right: 2%; 
     z-index: -10;
   }
   
@@ -69,5 +70,6 @@
     width: 16vw; 
     height: auto;
     opacity: 0.2;
-    filter: sepia(1) hue-rotate(180deg) saturate(5)
+    filter: sepia(4) hue-rotate(20deg) saturate(10)
   }
+
