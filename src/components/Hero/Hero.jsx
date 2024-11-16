@@ -2,7 +2,8 @@ import React from 'react';
 import './Hero.css';
 import photoOne from '../../assets/media/images/photoone.jpg';
 import photoThree from '../../assets/media/images/photothree.jpg';
-// import photoFour from '../../assets/media/images/photofour.jpg';
+import Spiral from "../../assets/media/svg/spiral.svg";
+import Spark from "../../assets/media/svg/spark.svg";
 
 const Hero = () => {
   return (
@@ -19,6 +20,19 @@ const Hero = () => {
           <p>...to be impacted</p>
         </div>
       </div>
+      
+
+
+      <div className="hero-doodle">
+        <img src={Spiral} alt="Decorative Doodle" />
+      </div>
+
+      <div className="hero-spark">
+        <img src={Spark} alt="Decorative Doodle" />
+      </div>
+
+
+
       <div className="hero-content">
         <h1>How we’re making a difference</h1>
         <p>Alia muciues ex nam, ea facer liber usu, e aliquam platonem est. Ut melo cum comune similique in accumsan noluisse.</p>

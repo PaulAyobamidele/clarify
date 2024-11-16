@@ -1,12 +1,45 @@
 .hero-container {
+    position: relative;
     display: flex;
     align-items: flex-start;
     padding: 20px;
     gap: 40px;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 0 auto;
     
   }
+
+
+  .hero-doodle {
+    position: absolute;
+    top: 1%; 
+    right: 90%; 
+    z-index: 0;
+  }
+  
+  .hero-doodle img {
+    width: 16vw; /* Use relative units for responsiveness */
+    height: auto;
+    opacity: 0.2;
+    filter: sepia(1) hue-rotate(180deg) saturate(5)
+  }
+
+
+  .hero-spark {
+    position: absolute;
+    top: 90%; 
+    right: 2%; 
+    z-index: 0;
+  }
+  
+  .hero-spark img {
+    width: 16vw; /* Use relative units for responsiveness */
+    height: auto;
+    opacity: 0.2;
+    filter: sepia(1) hue-rotate(180deg) saturate(5)
+  }
+
+
   
   .hero-images {
     position: relative;
@@ -14,7 +47,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 140px;
   }
 
   .hero-images:hover {
@@ -84,6 +117,7 @@
   
   .hero-content {
     width: 50%;
+    margin-top: 100px;
   }
   
   .hero-content h1 {

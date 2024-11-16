@@ -1,7 +1,23 @@
+
+:root {
+  /* Primary color - 60% */
+  --primary-color: #140501;
+
+  /* Secondary color - 30% */
+  --secondary-color: #FCDFD9;
+
+  /* Accent colors - 10% */
+  --accent-color1: #F4442E;
+  --accent-color2: #F6AA1C;
+  --accent-color3: #539987;
+}
+
+
 body {
-  font-family: 'Poppins', sans-serif; /* Use for body text */
+  font-family: 'Poppins', sans-serif; 
 }
 
 h1, h2, h3, h4, button, p {
-  font-family: 'Poppins', sans-serif; /* Use for headers and titles */
+  font-family: 'Poppins', sans-serif; 
 }
+
