@@ -12,12 +12,14 @@ import Awareness from './components/Awareness/Awareness.jsx';
 import Training from './components/Training/Training.jsx';
 import CTA from './components/CTA/CTA.jsx';
 import Contact from './components/Contact/Contact.jsx';
+import Executive from './components/Executives/Executive.jsx';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Hero />
+      <Executive />
       <AboutUs />
       <Awareness />
       <Training />
