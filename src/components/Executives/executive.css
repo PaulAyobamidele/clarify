@@ -73,3 +73,6 @@
     filter: sepia(4) hue-rotate(20deg) saturate(10)
   }
 
+  .executive-item p {
+    font-weight: 600;
+  }

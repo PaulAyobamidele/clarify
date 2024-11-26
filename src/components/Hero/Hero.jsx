@@ -32,24 +32,24 @@ const Hero = () => {
       </div>
 
 
-
       <div className="hero-content">
-        <h1>How we’re making a difference</h1>
-        <p>Alia muciues ex nam, ea facer liber usu, e aliquam platonem est. Ut melo cum comune similique in accumsan noluisse.</p>
-        <div className="features">
-          <div className="feature-item">
-            <span className="icon">👋</span>
-            <p>Alia muciues ex nam, ea facer liber usu, e aliquam platonem est. Help us to protect children.</p>
-          </div>
-          <div className="feature-item">
-            <span className="icon">🌍</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.</p>
-          </div>
-        </div>
-        <p>Donec pellentesque nunc sed neque congue, ut lobortis odio sollicitudin. Curabitur orci orci, maximus necsed.</p>
-        <button className="learn-more-btn">Learn More</button>
-      </div>
+  <h1>How We’re Making a Difference</h1>
+  <p>We are raising awareness for teachers and parents about learning disabilities like dyslexia, dyscalculia, and ADHD in Morocco and Nigeria, ensuring all students receive the support they need.</p>
+  <div className="features">
+    <div className="feature-item">
+      <span className="icon">🎓</span>
+      <p>Empowering Teachers: Training teachers to recognize learning disabilities and apply effective strategies in the classroom.</p>
     </div>
+    <div className="feature-item">
+      <span className="icon">👨‍👩‍👧‍👦</span>
+      <p>Building Awareness: Raising awareness among parents and educators to improve support for students with learning disabilities.</p>
+    </div>
+  </div>
+  <p>We measure our impact by tracking the number of awareness sessions and trainings held, continuously improving our reach and effectiveness.</p>
+  <button className="learn-more-btn">Learn More</button>
+</div>
+</div>
+
   );
 };
 

@@ -9,6 +9,7 @@ const Navbar = () => {
             <ul className="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About us</a></li>
+                <li><a href="#causes">Executives</a></li>
                 <li><a href="#causes">Awareness</a></li>
                 <li><a href="#page">Training</a></li>
                 <li><a href="#donation">Donation</a></li>
