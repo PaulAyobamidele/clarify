@@ -1,11 +1,24 @@
+.executive__container {
+  /* background-color: rgba(var(--accent-color2-rgb), 0.1); */
+}
+
+.executive__container h1 {
+  text-align: center;
+  padding-top: 30px;
+  color: var(--accent-color3);
+}
+
+
+
+
 .executive-grid {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 20px;
-    padding: 60px 400px;
-    margin: 40px 0;
-    background-color: rgba(var(--accent-color2-rgb), 0.1);
+    padding: 20px 400px;
+    margin: 20px 0;
+    /* background-color: rgba(var(--accent-color2-rgb), 0.1); */
   }
   
   .executive-item {
@@ -76,3 +89,84 @@
   .executive-item p {
     font-weight: 600;
   }
+
+
+
+  /* Overlay container */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Overlay content */
+.overlay-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.overlay-content h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.overlay-content p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Social links */
+.overlay-content .socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.overlay-content .socials a {
+  text-decoration: none;
+  color: #0077b5; /* LinkedIn blue */
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.overlay-content .socials a:hover {
+  color: #005582;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-button:hover {
+  color: #000;
+}

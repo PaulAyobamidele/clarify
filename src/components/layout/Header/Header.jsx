@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.css'; 
-import Navbar from '../Navbar/Navbar.jsx';
+// import Navbar from '../Navbar/Navbar.jsx';
 
 const Header = () => {
   return (
     <header className="header">
-    <Navbar />
+    {/* <Navbar /> */}
     <div className="header-content">
         <p className="header-subtitle">Breaking Barriers, One Step at a Time</p>
         <h1 className="header-title">

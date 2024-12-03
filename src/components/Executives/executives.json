@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Paul ADUBI",
+      "role": "Chief Executive Officer",
+      "image": "../../assets/media/images/executives/Ayobamidele.jpg",
+      "about": "Paul oversees the company strategy and ensures operational efficiency.",
+      "linkedin": "https://www.linkedin.com/in/pauladubi",
+      "email": "paul.adubi@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Christianah OYEWALE",
+      "role": "Chief Operating Officer",
+      "image": "../../assets/media/images/executives/Christianah.jpg",
+      "about": "Christianah manages the daily operations and ensures smooth processes.",
+      "linkedin": "https://www.linkedin.com/in/christianahoyewale",
+      "email": "christianah.oyewale@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Segun OMOTUNDE",
+      "role": "Chief Financial Officer",
+      "image": "../../assets/media/images/executives/Omotunde.jpg",
+      "about": "Segun is responsible for financial planning and risk management.",
+      "linkedin": "https://www.linkedin.com/in/segunomotunde",
+      "email": "segun.omotunde@example.com"
+    },
+    {
+      "id": 4,
+      "name": "Samuel GYASI-KOBINA",
+      "role": "Chief Technology Officer",
+      "image": "../../assets/media/images/executives/Samuel.png",
+      "about": "Samuel leads the development of cutting-edge technological solutions.",
+      "linkedin": "https://www.linkedin.com/in/samuelgyasi-kobina",
+      "email": "samuel.gyasi@example.com"
+    }
+  ]
+  
