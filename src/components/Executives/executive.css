@@ -1,5 +1,6 @@
 .executive__container {
   /* background-color: rgba(var(--accent-color2-rgb), 0.1); */
+  margin-bottom: 40px;
 }
 
 .executive__container h1 {
@@ -18,7 +19,6 @@
     gap: 20px;
     padding: 20px 400px;
     margin: 20px 0;
-    /* background-color: rgba(var(--accent-color2-rgb), 0.1); */
   }
   
   .executive-item {

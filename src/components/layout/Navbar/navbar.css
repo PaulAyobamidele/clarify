@@ -70,3 +70,48 @@
 
 
 
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .contact-info {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+  /* For mobile and very small screens */
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.1rem;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+    }
+  
+    .donate-button {
+      font-size: 0.9rem;
+      padding: 5px 10px;
+    }
+  }

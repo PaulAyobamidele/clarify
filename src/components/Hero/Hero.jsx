@@ -8,19 +8,23 @@ import Spark from "../../assets/media/svg/spark.svg";
 const Hero = () => {
   return (
     <div className="hero__source">
-        <div className="hero__vision">
-            <h1>Vision Statement</h1>
-            <p>A future where every child in Sub-Saharan Africa, Morocco, and Nigeria, regardless of learning ability, 
-              has access to inclusive, equitable, and quality education, empowering them to reach their full potential 
-              and contribute meaningfully to society.</p>
+        <div className="about__herosection">
+          <div className="hero__vision">
+              <h1>Vision Statement</h1>
+              <p>A future where every child in Sub-Saharan Africa, Morocco, and Nigeria, regardless of learning ability, 
+                has access to inclusive, equitable, and quality education, empowering them to reach their full potential 
+                and contribute meaningfully to society.</p>
+          </div>
+
+          <div className="hero__mission">
+              <h1>Mission Statement</h1>
+              <p>To transform education systems in Sub-Saharan Africa, Morocco, and Nigeria by addressing the unique needs of children with learning disabilities through innovative interventions, comprehensive teacher training, community engagement, and evidence-based practices.
+                Our mission is to eliminate stigma, enhance diagnostic and support services, and ensure that all children thrive academically, socially, and economically.</p>
+          </div>
         </div>
 
-        <div className="hero__mission">
-            <h1>Mission Statement</h1>
-            <p>To transform education systems in Sub-Saharan Africa, Morocco, and Nigeria by addressing the unique needs of children with learning disabilities through innovative interventions, comprehensive teacher training, community engagement, and evidence-based practices.
-               Our mission is to eliminate stigma, enhance diagnostic and support services, and ensure that all children thrive academically, socially, and economically.</p>
-        </div>
 
+        
         <div className="hero-container">
       <div className="hero-images">
         <div className="image image-one">

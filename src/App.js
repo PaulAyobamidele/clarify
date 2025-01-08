@@ -30,7 +30,7 @@ function App() {
         <Route path="/cta" element={<CTA />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer /> {/* Footer can be outside Routes to be shown on every page */}
+      <Footer /> 
     </Router>
   );
 }
