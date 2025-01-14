@@ -68,7 +68,7 @@
   }
   
   .executive-item button:hover {
-    background-color: rgb(58, 104, 92);
+    background-color: var(--accent-hover);
   }
   
 

@@ -23,7 +23,7 @@
   .footer_section h3 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: var(--accent-color2);
+    color: var(--accent-color3);
   }
   
   .footer_section p {
@@ -48,7 +48,7 @@
   }
   
   .footer_section ul li a:hover {
-    color: var(--accent-color2);
+    color: var(--accent-hover);
   }
   
   .footer_section a {
@@ -75,7 +75,7 @@
   }
   
   .social_icons a:hover {
-    background-color: var(--accent-color2);
+    background-color: var(--accent-hover);
   }
   
   .footer_bottom {

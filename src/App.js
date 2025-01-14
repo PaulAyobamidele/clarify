@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import layout components
-import Navbar from './components/layout/Navbar/Navbar.jsx'; // Navbar that contains links
+import Navbar from './components/layout/Navbar/Navbar.jsx';
 import Header from './components/layout/Header/Header.jsx';
 import Footer from './components/layout/Footer/Footer.jsx';
 
@@ -15,14 +15,33 @@ import Training from './components/Training/Training.jsx';
 import CTA from './components/CTA/CTA.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Executive from './components/Executives/Executive.jsx';
+import MyChatbot from './components/Chat/Chatbot.jsx'; // Import the chatbot component
+
+// Sequential Page Component
+const HomePage = () => {
+  return (
+    <div>
+      <Header />
+      <Hero />
+      <Executive />
+      <AboutUs />
+      <Awareness />
+      <Training />
+      <CTA />
+      <Contact />
+    </div>
+  );
+};
 
 function App() {
   return (
     <Router>
-      <Navbar /> 
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Header />} />
-        <Route path="/hero" element={<Hero />} />
+        {/* All components sequentially rendered on the homepage */}
+        <Route path="/" element={<HomePage />} />
+        {/* Keep individual routes functional */}
+        <Route path="/header" element={<Header />} />
         <Route path="/executives" element={<Executive />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/awareness" element={<Awareness />} />
@@ -30,7 +49,10 @@ function App() {
         <Route path="/cta" element={<CTA />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer /> 
+      <Footer />
+      
+      {/* The chatbot is placed outside the Routes, so it appears on all pages */}
+      <MyChatbot />
     </Router>
   );
 }

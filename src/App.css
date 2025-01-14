@@ -9,13 +9,19 @@
   /* Accent colors - 10% */
   --accent-color1: #C1121F;
   --accent-color1-rgb: 193, 18, 31; /* RGB equivalent of #C1121F */
-  --accent-color2: #F6AA1C;
+  --accent-color2: #070600;
   --accent-color2-rgb: 59, 47, 47;
-  --accent-color3: rgba(83, 153, 135);
+  --accent-color3: #F6AA1C;
+  --accent-hover: #D68F0A;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* src/App.css or src/navbar.css */
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -27,3 +33,112 @@ h1, h2, h3, h4, button, p {
   font-family: 'Poppins', sans-serif; 
 }
 
+/* src/App.css */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+
+/* src/App.css */
+
+/* src/App.css */
+.chatbot-container {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 1000 !important;
+  min-width: 300px;  /* Minimum width */
+  min-height: 400px; /* Minimum height */
+}
+
+
+
+
+
+/* src/App.css or src/Chatbot.css */
+
+/* Style the chat icon */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Style the chat window */
+.chatbot-window {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Style the chatbot content */
+.rc-chatbot {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure message box appears */
+.rc-chatbot .rc-message-container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.rc-chatbot .rc-chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.rc-chatbot .rc-message-box {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.rc-chatbot input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
