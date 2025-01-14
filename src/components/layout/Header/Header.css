@@ -1,6 +1,6 @@
 /* header.css */
 .header {
-  background-image: url('../../../assets/media/images/phototwo.jpg'); 
+  background-image: url('../../../assets/media/images/phototwo.jpg');
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -16,11 +16,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 600px;
+  /* text-transform: uppercase; */
 }
 
 .header-subtitle {
   font-size: 1.4rem;
   font-weight: 400;
+  /* text-transform: uppercase; */
+
 }
 
 .header-title {

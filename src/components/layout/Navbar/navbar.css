@@ -29,9 +29,10 @@
 .nav-links a {
     color: black;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.04rem;
     transition: all 0.3s ease;
+    text-transform: uppercase;
 
 }
 
@@ -60,6 +61,7 @@
     border-radius: 5px;
     font-family: Poppins;
     transition: all 0.3s ease;
+    text-transform: uppercase;
 }
 
 .donate-button:hover {
