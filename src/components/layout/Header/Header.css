@@ -34,7 +34,7 @@
 }
 
 .donation-button {
-  background-color: #C1121F;
+  background-color: var(--accent-color1);
   border: none;
   color: white;
   padding: 12px 20px;

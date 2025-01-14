@@ -90,7 +90,7 @@ const Chatbot = () => {
         <div className="chat-window">
           <div className="chat-header">
             <h3>Chat with us</h3>
-            <button onClick={() => setIsOpen(false)}>Close</button>
+            <button className='chatbot-bbtn' onClick={() => setIsOpen(false)}>Close</button>
           </div>
 
           <div className="chat-body">

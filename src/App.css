@@ -82,7 +82,7 @@ nav a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #4a90e2;
+  /* background-color: #4a90e2; */
   border: none;
   border-radius: 50%;
   width: 50px;

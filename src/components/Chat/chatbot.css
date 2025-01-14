@@ -74,7 +74,7 @@
     border: 1px solid #ddd;
   }
   
-  button {
+  .chatbot-bbtn {
     padding: 8px 16px;
     background-color: var(--accent-color3);
     color: white;
@@ -84,7 +84,7 @@
     cursor: pointer;
   }
   
-  button:hover {
+  .chatbot-bbtn:hover {
     background-color: var(--accent-color3);
   }
   
