@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Awareness.css";
 
 // Importing images from src/assets/images/slide
-import Slide1 from "../../assets/media/images/photoone.jpg";
-import Slide2 from "../../assets/media/images/phototwo.jpg";
-import Slide3 from "../../assets/media/images/photothree.jpg";
+import Slide1 from "../../assets/media/outreach/rabat.jpg";
+import Slide2 from "../../assets/media/outreach/fes.jpg";
+import Slide3 from "../../assets/media/outreach/fes2.jpg";
 
 const slides = [
   {

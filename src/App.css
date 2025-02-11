@@ -1,18 +1,17 @@
-
 :root {
   /* Primary color - 60% */
   --primary-color: #140501;
 
   /* Secondary color - 30% */
-  --secondary-color: #FCDFD9;
+  --secondary-color: #fcdfd9;
 
   /* Accent colors - 10% */
-  --accent-color1: #C1121F;
+  --accent-color1: #c1121f;
   --accent-color1-rgb: 193, 18, 31; /* RGB equivalent of #C1121F */
   --accent-color2: #070600;
   --accent-color2-rgb: 59, 47, 47;
-  --accent-color3: #F6AA1C;
-  --accent-hover: #D68F0A;
+  --accent-color3: #f6aa1c;
+  --accent-hover: #d68f0a;
 }
 
 * {
@@ -24,13 +23,17 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
 }
 
-h1, h2, h3, h4, button, p {
-  font-family: 'Poppins', sans-serif; 
+h1,
+h2,
+h3,
+h4,
+button,
+p {
+  font-family: "Poppins", sans-serif;
 }
 
 /* src/App.css */
@@ -58,7 +61,6 @@ nav a {
   font-weight: bold;
 }
 
-
 /* src/App.css */
 
 /* src/App.css */
@@ -67,13 +69,9 @@ nav a {
   bottom: 20px !important;
   right: 20px !important;
   z-index: 1000 !important;
-  min-width: 300px;  /* Minimum width */
+  min-width: 300px; /* Minimum width */
   min-height: 400px; /* Minimum height */
 }
-
-
-
-
 
 /* src/App.css or src/Chatbot.css */
 
@@ -91,7 +89,7 @@ nav a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Style the chat window */
@@ -103,7 +101,7 @@ nav a {
   height: 450px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   display: flex;
   flex-direction: column;

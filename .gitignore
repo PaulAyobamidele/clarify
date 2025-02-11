@@ -1,5 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# useful links
+
+# https://www.svgrepo.com/svg/494413/training-achievement-medal
+
+
 # dependencies
 /node_modules
 /.pnp

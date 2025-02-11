@@ -6,93 +6,87 @@
 .executive__container h1 {
   text-align: center;
   padding-top: 30px;
-  color: var(--accent-color3);
+  color: #333;
 }
 
-
-
-
 .executive-grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 20px;
-    padding: 20px 400px;
-    margin: 20px 0;
-  }
-  
-  .executive-item {
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .executive-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .executive-item img {
-    width: 200px;
-    height: 200px;
-    border-radius: 5%;
-    /* margin-bottom: 15px; */
-    padding-top: 20px;
-    object-fit: contain;
-  }
-  
-  .executive-item h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: #333;
-  }
-  
-  .executive-item p {
-    font-size: 0.9rem;
-    color: #777;
-  }
-  
-  .executive-item button {
-    margin-top: 15px;
-    padding: 10px 15px;
-    font-size: 0.9rem;
-    border: none;
-    background-color: var(--accent-color3);
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .executive-item button:hover {
-    background-color: var(--accent-hover);
-  }
-  
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 20px;
+  padding: 20px 400px;
+  margin: 20px 0;
+}
 
-  .arrow-doodle {
-    position: absolute;
-    top: 60%; 
-    right: 2%; 
-    z-index: -10;
-  }
-  
-  .arrow-doodle img {
-    width: 16vw; 
-    height: auto;
-    opacity: 0.2;
-    filter: sepia(4) hue-rotate(20deg) saturate(10)
-  }
+.executive-item {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-  .executive-item p {
-    font-weight: 600;
-  }
+.executive-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
+.executive-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  /* margin-bottom: 15px; */
+  padding-top: 20px;
+  object-fit: contain;
+}
 
+.executive-item h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
 
-  /* Overlay container */
+.executive-item p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.executive-item button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.executive-item button:hover {
+  background-color: var(--accent-color2);
+}
+
+.arrow-doodle {
+  position: absolute;
+  top: 60%;
+  right: 2%;
+  z-index: -10;
+}
+
+.arrow-doodle img {
+  width: 16vw;
+  height: auto;
+  opacity: 0.2;
+  filter: sepia(4) hue-rotate(20deg) saturate(10);
+}
+
+.executive-item p {
+  font-weight: 600;
+}
+
+/* Overlay container */
 .overlay {
   position: fixed;
   top: 0;
@@ -109,13 +103,16 @@
 /* Overlay content */
 .overlay-content {
   background: #fff;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   text-align: center;
   width: 90%;
-  max-width: 500px;
+  max-width: 1200px;
+  height: 700px;
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  line-height: 32px;
+  font-size: 18px;
 }
 
 .overlay-content img {
@@ -133,6 +130,7 @@
 .overlay-content p {
   color: #555;
   margin-bottom: 10px;
+  text-align: justify;
 }
 
 /* Social links */

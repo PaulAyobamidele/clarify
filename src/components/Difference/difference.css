@@ -1,0 +1,180 @@
+
+
+
+
+.hero-doodle {
+    position: absolute;
+    top: 1%; 
+    right: 90%; 
+    z-index: 0;
+  }
+  
+  .hero-doodle img {
+    width: 16vw; /* Use relative units for responsiveness */
+    height: auto;
+    opacity: 0.2;
+    filter: sepia(1) hue-rotate(180deg) saturate(5)
+  }
+
+
+  .hero-spark {
+    position: absolute;
+    top: 56%; 
+    left: 96%; 
+    z-index: 4;
+  }
+  
+  .hero-spark img {
+    width: 16vw; /* Use relative units for responsiveness */
+    height: auto;
+    opacity: 0.2;
+    filter: sepia(1) hue-rotate(180deg) saturate(5)
+  }
+
+
+  
+  .hero-images {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-images:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .image img:hover {
+        filter: brightness(0.8);
+        transition: filter 0.3s ease-in-out;
+    }
+
+    .statistic:hover {
+        background-color: #A10E1A;
+        transition: background-color 0.3s ease-in-out;
+    }
+  
+  .image {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-one {
+    top: 0;
+    left: 20px;
+    z-index: 2;
+  }
+  
+  .image-two {
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+  }
+  
+  .statistic {
+    position: absolute;
+    bottom: -400px;
+    left: 340px;
+    background-color: #C1121F;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  .statistic h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .statistic p {
+    margin: 0;
+    font-size: 0.6em;
+  }
+  
+  .hero-content {
+    width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .hero-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 1.5em;
+  }
+  
+  .learn-more-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 2px solid #222;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #222;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .hero__vision {
+    margin: 0 300px;
+
+  }
+
+  .hero__vision h1 {
+    text-align: center;
+    color: var(--accent-color3);
+  }
+
+  
+  .hero__mission {
+    margin: 0 300px;
+  }
+
+  .hero__mission h1 {
+    text-align: center;
+    color: var(--accent-color3);
+
+  }
+
+

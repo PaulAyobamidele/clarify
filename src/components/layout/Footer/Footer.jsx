@@ -8,9 +8,7 @@ const Footer = () => {
       <div className="footer_top">
         <div className="footer_section">
           <h3>About Us</h3>
-          <p>
-            We are a leading company providing top-notch solutions for your business needs. 
-            Our goal is to deliver excellence and drive innovation in every project.
+          <p>We empower children with learning disabilities in Africa through inclusive education, advocacy, and teacher training.
           </p>
         </div>
         <div className="footer_section">
