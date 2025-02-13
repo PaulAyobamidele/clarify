@@ -31,8 +31,8 @@ const HomePage = () => {
       <Awareness />
       <Training />
       <CTA />
-      <Contact />
       <Events />
+      <Contact />
     </div>
   );
 };

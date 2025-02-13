@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./event.css";
 
 import nigeriaFlag from "../../assets/media/flags/Nigeria.gif";
@@ -12,8 +12,35 @@ import namibiaFlag from "../../assets/media/flags/Namibia.gif";
 import moroccoFlag from "../../assets/media/flags/morocco.gif";
 import beninFlag from "../../assets/media/flags/benin.gif";
 
+// FES Images
+import img1 from "../../assets/media/outreach/Fes/_MG_6351.jpg";
+import img3 from "../../assets/media/outreach/Fes/IMG_6339.jpg";
+import img4 from "../../assets/media/outreach/Fes/_MG_6354.jpg";
+import img16 from "../../assets/media/outreach/Fes/_MG_6355.jpg";
+import img5 from "../../assets/media/outreach/Fes/_MG_6354.jpg";
+import img17 from "../../assets/media/outreach/Fes/IMG_6345.jpg";
+import img18 from "../../assets/media/outreach/Fes/IMG_6364.jpg";
+import img19 from "../../assets/media/outreach/Fes/IMG_6346.jpg";
+import img20 from "../../assets/media/outreach/Fes/IMG_6365.jpg";
+import img21 from "../../assets/media/outreach/Fes/IMG_6333.jpg";
+
+// Rabat Images
+import r1 from "../../assets/media/outreach/Rabat/7K4A9264.jpg";
+import r2 from "../../assets/media/outreach/Rabat/7K4A9284.jpg";
+import r3 from "../../assets/media/outreach/Rabat/7K4A9281.jpg";
+import r4 from "../../assets/media/outreach/Rabat/7K4A9411.jpg";
+import r5 from "../../assets/media/outreach/Rabat/7K4A9278.jpg";
+import r6 from "../../assets/media/outreach/Rabat/7K4A9333.jpg";
+import r7 from "../../assets/media/outreach/Rabat/7K4A9292.jpg";
+import r8 from "../../assets/media/outreach/Rabat/7K4A9353.jpg";
+import r9 from "../../assets/media/outreach/Rabat/7K4A9402.jpg";
+import r10 from "../../assets/media/outreach/Rabat/7K4A9362.jpg";
+import r11 from "../../assets/media/outreach/Rabat/7K4A9350.jpg";
+import r14 from "../../assets/media/outreach/Rabat/7K4A9408.jpg";
+
 const Events = () => {
   // ✅ Corrected: Merge SVG and Image Flags into One Array
+  const [selectedCountry, setSelectedCountry] = useState("All");
 
   const countries = [
     { name: "Nigeria", flag: <img src={nigeriaFlag} alt="Nigeria Flag" /> },
@@ -28,29 +55,49 @@ const Events = () => {
     { name: "Benin", flag: <img src={beninFlag} alt="Benin Flag" /> },
   ];
 
+  const galleryImages = {
+    Fes: [img1, img3, img4, img16, img17, img18, img19, img20, img21],
+    Rabat: [r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r14],
+    Beijing: [img1, img3, img5],
+  };
+
+  const youtubeVideos = [
+    {
+      title: "Opening Ceremony",
+      url: "https://www.youtube.com/embed/chQL3n1GVac?start=30",
+    },
+    {
+      title: "Panel Discussion",
+      url: "https://www.youtube.com/embed/chQL3n1GVac?start=120",
+    },
+    {
+      title: "Keynote Speech",
+      url: "https://www.youtube.com/embed/chQL3n1GVac?start=300",
+    },
+    {
+      title: "Q&A Session",
+      url: "https://www.youtube.com/embed/chQL3n1GVac?start=600",
+    },
+    {
+      title: "Clarify Project Interview With Wilfried Part One",
+      url: "https://www.youtube.com/embed/87vn_D77tzQ",
+    },
+    {
+      title: "Clarify Project Interview With Ms Faith",
+      url: "https://www.youtube.com/embed/EXJFGaFLAmk",
+    },
+    {
+      title: "Clarify Project Interview With Mr. Oke",
+      url: "https://www.youtube.com/embed/7YwUShQJ1ds",
+    },
+    {
+      title: "Clarify Project Interview With Wilfried Part Two",
+      url: "https://www.youtube.com/embed/yBtBWs0O9Zo",
+    },
+  ];
+
   return (
     <div className="events-page">
-      {/* Gallery Section */}
-      <section className="gallery-section">
-        <h2>Gallery</h2>
-        <div className="gallery-filters">
-          <button>All</button>
-          <button>Nigeria</button>
-          <button>Kenya</button>
-          <button>USA</button>
-        </div>
-        <div className="gallery-grid">
-          <img src="/images/event1.jpg" alt="Event 1" />
-          <img src="/images/event2.jpg" alt="Event 2" />
-          <img src="/images/event3.jpg" alt="Event 3" />
-          <img src="/images/event4.jpg" alt="Event 4" />
-          <img src="/images/event5.jpg" alt="Event 5" />
-          <img src="/images/event6.jpg" alt="Event 6" />
-          <img src="/images/event7.jpg" alt="Event 7" />
-          <img src="/images/event8.jpg" alt="Event 8" />
-        </div>
-      </section>
-
       {/* Outreaches Section */}
       <section className="outreach-section">
         <h2>Our Outreaches</h2>
@@ -92,7 +139,7 @@ const Events = () => {
 
       {/* Numbers & Statistics */}
       <section className="stats-section">
-        <h2>Our Impact</h2>
+        <h2>Our Impact in Numbers</h2>
         <div className="stats-grid">
           <div className="stat-item">
             <h3>4+</h3>
@@ -109,6 +156,26 @@ const Events = () => {
         </div>
       </section>
 
+      <section className="live-events-section">
+        <h2>Watch Our Events Live</h2>
+        <div className="live-events-grid">
+          {youtubeVideos.map((video, index) => (
+            <div key={index} className="live-event-item">
+              <h3>{video.title}</h3>
+              <iframe
+                width="100%"
+                height="250"
+                src={video.url}
+                title={video.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Partners & Sponsors */}
       <section className="partners-section">
         <h2>Our Partners & Sponsors</h2>
@@ -116,6 +183,37 @@ const Events = () => {
           <img src="/images/partner1.png" alt="Partner 1" />
           <img src="/images/partner2.png" alt="Partner 2" />
           <img src="/images/partner3.png" alt="Partner 3" />
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="gallery-section">
+        <h2>Gallery</h2>
+
+        {/* Country Filter Buttons */}
+        <div className="gallery-filters">
+          {Object.keys(galleryImages).map((country) => (
+            <button key={country} onClick={() => setSelectedCountry(country)}>
+              {country}
+            </button>
+          ))}
+        </div>
+
+        {/* Image Carousel */}
+        <div className="gallery-carousel">
+          <div className="gallery-slide">
+            {galleryImages[selectedCountry] ? (
+              galleryImages[selectedCountry].map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Event in ${selectedCountry}`}
+                />
+              ))
+            ) : (
+              <p>Please select an event to view our gallery</p>
+            )}
+          </div>
         </div>
       </section>
     </div>

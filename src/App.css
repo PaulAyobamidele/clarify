@@ -12,6 +12,11 @@
   --accent-color2-rgb: 59, 47, 47;
   --accent-color3: #f6aa1c;
   --accent-hover: #d68f0a;
+  --secondary-color: #f9f9f9;
+  --text-color: #333;
+  --border-color: #ddd;
+  --error-color: #ff4d4d;
+  --success-color: #28a745;
 }
 
 * {
