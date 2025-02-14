@@ -1,90 +1,117 @@
-/* Chatbot.css */
 .chatbot-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-  
-  .chat-icon {
-    font-size: 30px;
-    cursor: pointer;
-    background-color: var(--accent-color3);
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .chat-window {
-    width: 300px;
-    height: 400px;
-    position: absolute;
-    bottom: 70px;
-    right: 0;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .chat-header {
-    background-color: var(--accent-color3);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    border-radius: 8px 8px 0 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .chat-body {
-    padding: 10px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  
-  .chat-history {
-    max-height: 300px;
-    overflow-y: auto;
-  }
-  
-  .user-message {
-    background-color: #d3f8e2;
-    padding: 8px;
-    margin: 5px 0;
-    border-radius: 8px;
-    align-self: flex-start;
-  }
-  
-  .bot-message {
-    background-color: #f0f0f0;
-    padding: 8px;
-    margin: 5px 0;
-    border-radius: 8px;
-    align-self: flex-end;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-  }
-  
-  .chatbot-bbtn {
-    padding: 8px 16px;
-    background-color: var(--accent-color3);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  
-  .chatbot-bbtn:hover {
-    background-color: var(--accent-color3);
-  }
-  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chat-icon {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: var(--accent-color3);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.chat-window {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  background-color: var(--accent-color3);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-body {
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chat-history {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.user-message {
+  background-color: #d3f8e2;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+.bot-message {
+  background-color: #f0f0f0;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 8px;
+  align-self: flex-end;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 10px;
+  border-radius: 25px; /* More pronounced rounded corners */
+  border: 1px solid #ccc; /* Soft border color */
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+input[type="text"]:focus {
+  border-color: var(--accent-color3); /* Accent color on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+input[type="text"]::placeholder {
+  color: #aaa; /* Lighter placeholder text */
+  font-style: italic; /* Add a slight style to the placeholder */
+}
+
+button {
+  background-color: var(--accent-color3);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 25px; /* Match button with the text input's rounded edges */
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: var(--accent-color3); /* Slightly darker on hover */
+}
+
+.chatbot-bbtn {
+  padding: 8px 16px;
+  background-color: var(--accent-color3);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.chatbot-bbtn:hover {
+  background-color: var(--accent-color3);
+}

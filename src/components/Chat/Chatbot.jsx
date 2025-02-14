@@ -8,41 +8,40 @@ const API_KEY = process.env.REACT_APP_OPENAI_API_KEY; // Replace with your Huggi
 
 // Function to get response from Hugging Face model
 const getChatbotResponse = async (query) => {
-    try {
-      const response = await axios.post(
-        API_URL,
-        {
-          inputs: query,
+  try {
+    const response = await axios.post(
+      API_URL,
+      {
+        inputs: query,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${API_KEY}`,
         },
-        {
-          headers: {
-            Authorization: `Bearer ${API_KEY}`,
-          },
-        }
-      );
-  
-      console.log("API Response:", response);
-  
-      // Assuming response format is correct, check it and return the response
-      if (response.data && response.data[0] && response.data[0].generated_text) {
-        let text = response.data[0].generated_text;
-  
-        // Truncate the response to one paragraph (limit by number of characters or words)
-        const maxLength = 600;  // You can adjust this based on your needs
-        if (text.length > maxLength) {
-          text = text.substring(0, maxLength) + "...";  // Truncate with ellipsis
-        }
-  
-        return text;
-      } else {
-        return "Sorry, I couldn't understand the response.";
       }
-    } catch (error) {
-      console.error("Error fetching data from Hugging Face API:", error);
-      return "Sorry, I couldn't process your request. Please try again later.";
+    );
+
+    console.log("API Response:", response);
+
+    // Assuming response format is correct, check it and return the response
+    if (response.data && response.data[0] && response.data[0].generated_text) {
+      let text = response.data[0].generated_text;
+
+      // Truncate the response to one paragraph (limit by number of characters or words)
+      const maxLength = 600; // You can adjust this based on your needs
+      if (text.length > maxLength) {
+        text = text.substring(0, maxLength) + "..."; // Truncate with ellipsis
+      }
+
+      return text;
+    } else {
+      return "Sorry, I couldn't understand the response.";
     }
-  };
-  
+  } catch (error) {
+    console.error("Error fetching data from Hugging Face API:", error);
+    return "Sorry, I couldn't process your request. Please try again later.";
+  }
+};
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false); // Toggle chat window visibility
@@ -90,7 +89,9 @@ const Chatbot = () => {
         <div className="chat-window">
           <div className="chat-header">
             <h3>Chat with us</h3>
-            <button className='chatbot-bbtn' onClick={() => setIsOpen(false)}>Close</button>
+            <button className="chatbot-bbtn" onClick={() => setIsOpen(false)}>
+              Close
+            </button>
           </div>
 
           <div className="chat-body">
@@ -99,7 +100,9 @@ const Chatbot = () => {
               {chatHistory.map((message, index) => (
                 <div
                   key={index}
-                  className={message.sender === "user" ? "user-message" : "bot-message"}
+                  className={
+                    message.sender === "user" ? "user-message" : "bot-message"
+                  }
                 >
                   {message.text}
                 </div>

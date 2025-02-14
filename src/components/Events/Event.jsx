@@ -17,7 +17,7 @@ import img1 from "../../assets/media/outreach/Fes/_MG_6351.jpg";
 import img3 from "../../assets/media/outreach/Fes/IMG_6339.jpg";
 import img4 from "../../assets/media/outreach/Fes/_MG_6354.jpg";
 import img16 from "../../assets/media/outreach/Fes/_MG_6355.jpg";
-import img5 from "../../assets/media/outreach/Fes/_MG_6354.jpg";
+// import img5 from "../../assets/media/outreach/Fes/_MG_6354.jpg";
 import img17 from "../../assets/media/outreach/Fes/IMG_6345.jpg";
 import img18 from "../../assets/media/outreach/Fes/IMG_6364.jpg";
 import img19 from "../../assets/media/outreach/Fes/IMG_6346.jpg";
@@ -37,6 +37,11 @@ import r9 from "../../assets/media/outreach/Rabat/7K4A9402.jpg";
 import r10 from "../../assets/media/outreach/Rabat/7K4A9362.jpg";
 import r11 from "../../assets/media/outreach/Rabat/7K4A9350.jpg";
 import r14 from "../../assets/media/outreach/Rabat/7K4A9408.jpg";
+
+// Beijing Images
+import one from "../../assets/media/outreach/Beijing/one.jpg";
+import two from "../../assets/media/outreach/Beijing/two.jpg";
+import three from "../../assets/media/outreach/Beijing/three.jpg";
 
 const Events = () => {
   // ✅ Corrected: Merge SVG and Image Flags into One Array
@@ -58,7 +63,7 @@ const Events = () => {
   const galleryImages = {
     Fes: [img1, img3, img4, img16, img17, img18, img19, img20, img21],
     Rabat: [r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r14],
-    Beijing: [img1, img3, img5],
+    Beijing: [one, two, three],
   };
 
   const youtubeVideos = [
@@ -106,17 +111,28 @@ const Events = () => {
         </p>
         <div className="outreach-cards">
           <div className="outreach-card">
-            <h3>Africa Tech Drive</h3>
+            <h3>Young People's Awareness</h3>
             <p>
-              Empowering young tech enthusiasts in Africa with hands-on
-              training.
+              We have visited several meetings with young people and youths to
+              not just raise awareness, but also get their feedbacks and
+              diverser experiences.
             </p>
           </div>
           <div className="outreach-card">
-            <h3>STEM for Girls</h3>
+            <h3>Workshops and Webinars</h3>
             <p>
-              Encouraging young girls to explore Science, Technology,
-              Engineering, and Math.
+              We gatherered experts from different yet related fields to share
+              their knowledge and experiences with over 70 teachers and Parents
+              across Africa.
+            </p>
+          </div>
+          <div className="outreach-card">
+            <h3>Special Interviews</h3>
+            <p>
+              We have conducted several interviews with experts in the field of
+              education and child development to share their knowledge and
+              experiences with our audience, and also form a basis for needs
+              assessments
             </p>
           </div>
         </div>
@@ -157,7 +173,7 @@ const Events = () => {
       </section>
 
       <section className="live-events-section">
-        <h2>Watch Our Events Live</h2>
+        <h2>Watch Our Live Events</h2>
         <div className="live-events-grid">
           {youtubeVideos.map((video, index) => (
             <div key={index} className="live-event-item">
@@ -177,14 +193,14 @@ const Events = () => {
       </section>
 
       {/* Partners & Sponsors */}
-      <section className="partners-section">
+      {/* <section className="partners-section">
         <h2>Our Partners & Sponsors</h2>
         <div className="partners-logos">
           <img src="/images/partner1.png" alt="Partner 1" />
           <img src="/images/partner2.png" alt="Partner 2" />
           <img src="/images/partner3.png" alt="Partner 3" />
         </div>
-      </section>
+      </section> */}
 
       {/* Gallery Section */}
       <section className="gallery-section">

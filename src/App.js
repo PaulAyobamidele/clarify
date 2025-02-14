@@ -24,15 +24,33 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <Difference />
-      <Hero />
-      <Executive />
-      <AboutUs />
-      <Awareness />
-      <Training />
-      <CTA />
-      <Events />
-      <Contact />
+      <div id="difference">
+        <Difference />
+      </div>
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="executives">
+        <Executive />
+      </div>
+      <div id="about-us">
+        <AboutUs />
+      </div>
+      <div id="awareness">
+        <Awareness />
+      </div>
+      <div id="training">
+        <Training />
+      </div>
+      <div id="cta">
+        <CTA />
+      </div>
+      <div id="events">
+        <Events />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
     </div>
   );
 };
@@ -44,15 +62,6 @@ function App() {
       <Routes>
         {/* All components sequentially rendered on the homepage */}
         <Route path="/" element={<HomePage />} />
-        {/* Keep individual routes functional */}
-        <Route path="/header" element={<Header />} />
-        <Route path="/executives" element={<Executive />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/awareness" element={<Awareness />} />
-        <Route path="/training" element={<Training />} />
-        <Route path="/cta" element={<CTA />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/events" element={<Events />} />
       </Routes>
       <Footer />
 

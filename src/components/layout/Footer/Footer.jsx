@@ -38,13 +38,16 @@ const Footer = () => {
         <div className="footer_section">
           <h3>Contact Us</h3>
           <p>
-            123 Main Street, Suite 500
+            Lot 660, Hay Moulay Rachid.
             <br />
-            YourCity, YourCountry
+            Ben Guerir, 43150, Morocco
             <br />
-            Email: <a href="mailto:info@example.com">info@example.com</a>
+            Email:{" "}
+            <a href="mailto:gethelp.revayah@gmail.com">
+              gethelp.revayah@gmail.com
+            </a>
             <br />
-            Phone: <a href="tel:+1234567890">+1 234-567-890</a>
+            Phone: <a href="tel:+212712588870">+212 712 5888 70</a>
           </p>
         </div>
         <div className="footer_section">
@@ -65,7 +68,7 @@ const Footer = () => {
               <FaTwitter />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/105996923/admin/dashboard/"
               target="_blank"
               rel="noopener noreferrer"
             >

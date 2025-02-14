@@ -40,10 +40,13 @@ button,
 p {
   font-family: "Poppins", sans-serif;
 }
-
 /* src/App.css */
 html {
   scroll-behavior: smooth;
+}
+
+h3 {
+  padding: 20px 0;
 }
 
 section {
