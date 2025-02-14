@@ -75,7 +75,7 @@ const Footer = () => {
               <FaLinkedinIn />
             </a>
             <a
-              href="https://youtu.be/chQL3n1GVac"
+              href="https://www.youtube.com/watch?v=chQL3n1GVac&list=PLTVSb8AFDFph17dXoOCdiXPmN-luU3PWG"
               target="_blank"
               rel="noopener noreferrer"
             >
