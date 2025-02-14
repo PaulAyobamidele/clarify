@@ -41,6 +41,11 @@ p {
   font-family: "Poppins", sans-serif;
 }
 /* src/App.css */
+h3,
+p {
+  padding: 10px 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
