@@ -3,8 +3,8 @@ import "./Awareness.css";
 
 // Importing images from src/assets/images/slide
 import Slide1 from "../../assets/media/outreach/rabat.jpg";
-import Slide2 from "../../assets/media/outreach/fes.jpg";
-import Slide3 from "../../assets/media/outreach/fes2.jpg";
+import Slide2 from "../../assets/media/outreach/Rabat/7K4A9356.jpg";
+import Slide3 from "../../assets/media/outreach/Rabat/7K4A9264.jpg";
 
 const slides = [
   {
