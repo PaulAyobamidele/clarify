@@ -162,7 +162,7 @@ const Events = () => {
             <p>Events Organized</p>
           </div>
           <div className="stat-item">
-            <h3>300+</h3>
+            <h3>200+</h3>
             <p>People Reached</p>
           </div>
           <div className="stat-item">
