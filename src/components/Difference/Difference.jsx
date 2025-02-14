@@ -1,8 +1,10 @@
 import React from "react";
-import photoOne from '../../assets/media/images/photoone.jpg';
-import photoThree from '../../assets/media/images/photothree.jpg';
+import photoOne from "../../assets/media/images/photoone.jpg";
+import photoThree from "../../assets/media/images/photothree.jpg";
 import Spiral from "../../assets/media/svg/spiral.svg";
 import Spark from "../../assets/media/svg/spark.svg";
+// import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const HeroSection = () => {
   return (
@@ -22,34 +24,43 @@ const HeroSection = () => {
       </div>
 
       {/* Decorative Elements */}
-      <img className="hero-doodle" src={Spiral} alt="Spiral decorative element" />
+      <img
+        className="hero-doodle"
+        src={Spiral}
+        alt="Spiral decorative element"
+      />
       <img className="hero-spark" src={Spark} alt="Spark decorative element" />
 
       {/* Hero Content */}
       <article className="hero-content">
         <h1>How We’re Making a Difference</h1>
         <p>
-          We are raising awareness for teachers and parents about learning disabilities like 
-          <strong> Dyslexia, Dyscalculia, and ADHD</strong> in Morocco and Nigeria, ensuring all students receive the support they need.
+          We are raising awareness for teachers and parents about learning
+          disabilities like
+          <strong> Dyslexia, Dyscalculia, and ADHD</strong> in Morocco and
+          Nigeria, ensuring all students receive the support they need.
         </p>
 
         {/* Features Section */}
         <div className="features">
-          <FeatureItem 
-            icon="🎓" 
-            text="Empowering Teachers: Training teachers to recognize learning disabilities and apply effective strategies in the classroom." 
+          <FeatureItem
+            icon="🎓"
+            text="Empowering Teachers: Training teachers to recognize learning disabilities and apply effective strategies in the classroom."
           />
-          <FeatureItem 
-            icon="👨‍👩‍👧‍👦" 
-            text="Building Awareness: Raising awareness among parents and educators to improve support for students with learning disabilities." 
+          <FeatureItem
+            icon="👨‍👩‍👧‍👦"
+            text="Building Awareness: Raising awareness among parents and educators to improve support for students with learning disabilities."
           />
         </div>
 
         <p>
-          We measure our impact by tracking the number of awareness sessions and training programs conducted, continuously improving our reach and effectiveness.
+          We measure our impact by tracking the number of awareness sessions and
+          training programs conducted, continuously improving our reach and
+          effectiveness.
         </p>
-
-        <button className="learn-more-btn">Learn More</button>
+        <ScrollLink to="hero" smooth={true} duration={500}>
+          <button className="learn-more-btn">Learn More</button>
+        </ScrollLink>
       </article>
     </section>
   );
