@@ -62,6 +62,7 @@ const Executive = () => {
   return (
     <div className="executive__container">
       <h1>Meet the Executives</h1>
+      <h3>Explore Our Organizational Structure</h3>
       <div className="executive-grid">
         {executives.map((executive) => (
           <div className="executive-item" key={executive.id}>
